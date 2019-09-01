@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LazyCats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="QL4-gx-HQq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="phm-Sl-6hM">
+                                <rect key="frame" x="136" y="84" width="142" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="SFN-QY-9Gd"/>
+                                    <constraint firstAttribute="height" constant="100" id="WrE-6i-aUd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus-button-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="OoO-Dr-JuL">
+                                <rect key="frame" x="334" y="124" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5e4-RV-EAK"/>
+                                    <constraint firstAttribute="height" constant="40" id="zob-xx-9VZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-card-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-cc-e4N">
+                                <rect key="frame" x="30" y="214" width="354" height="618"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xTl-BA-eUi" userLabel="todo-card-stackview">
+                                <rect key="frame" x="60" y="244" width="294" height="558"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bGh-3y-0Z3" userLabel="title-deadline-stackview">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="160"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to-do title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrA-oq-h4j" userLabel="title">
+                                                <rect key="frame" x="33.5" y="0.0" width="227" height="75"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="48"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YYYY-MM-DD HH:MM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig9-gD-1hX" userLabel="deadline">
+                                                <rect key="frame" x="4" y="85" width="286.5" height="75"/>
+                                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="29"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.58811248291766205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TrA-oq-h4j" firstAttribute="top" secondItem="bGh-3y-0Z3" secondAttribute="top" id="7fc-do-I3a"/>
+                                            <constraint firstAttribute="height" constant="160" id="DD8-5x-dvn"/>
+                                            <constraint firstAttribute="bottom" secondItem="ig9-gD-1hX" secondAttribute="bottom" id="yVh-oK-zRA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-20" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-js-5Mv" userLabel="cat-comment-stackview">
+                                        <rect key="frame" x="0.0" y="180" width="294" height="378"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat1-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-JV-7er" userLabel="cat">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="264"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="264" id="zcY-N1-M56"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment1-LazyCats" translatesAutoresizingMaskIntoConstraints="NO" id="DK7-nv-x28" userLabel="comment">
+                                                <rect key="frame" x="0.0" y="244" width="294" height="134"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kw9-JV-7er" firstAttribute="top" secondItem="UFY-js-5Mv" secondAttribute="top" id="tx4-Nt-gSy"/>
+                                            <constraint firstAttribute="bottom" secondItem="DK7-nv-x28" secondAttribute="bottom" id="vOB-Pa-MDW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bGh-3y-0Z3" firstAttribute="top" secondItem="6c0-NH-gXV" secondAttribute="top" id="fdD-Eh-Tnj"/>
+                                    <constraint firstItem="UFY-js-5Mv" firstAttribute="bottom" secondItem="6c0-NH-gXV" secondAttribute="bottom" id="wFa-i3-W7F"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="6c0-NH-gXV"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qH-JO-l47">
+                                <rect key="frame" x="338" y="802" width="46" height="30"/>
+                                <state key="normal" title="trigger"/>
+                                <connections>
+                                    <action selector="trigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rha-AN-bIn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OoO-Dr-JuL" secondAttribute="trailing" constant="40" id="9BD-ZZ-6nk"/>
+                            <constraint firstItem="phm-Sl-6hM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ar7-qE-qPv"/>
+                            <constraint firstItem="OoO-Dr-JuL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="GgK-GF-MzC"/>
+                            <constraint firstAttribute="trailing" secondItem="QL4-gx-HQq" secondAttribute="trailing" id="HGE-QU-gSc"/>
+                            <constraint firstItem="y1y-cc-e4N" firstAttribute="top" secondItem="phm-Sl-6hM" secondAttribute="bottom" constant="30" id="KUT-9y-rv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qH-JO-l47" secondAttribute="trailing" constant="30" id="Mmt-IJ-rVx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y1y-cc-e4N" secondAttribute="bottom" constant="30" id="MoJ-PK-WMC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3qH-JO-l47" secondAttribute="bottom" constant="30" id="Nu9-8s-QSi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y1y-cc-e4N" secondAttribute="trailing" constant="30" id="VNk-3W-yXN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTl-BA-eUi" secondAttribute="trailing" constant="60" id="XvI-Uh-smc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xTl-BA-eUi" secondAttribute="bottom" constant="60" id="Ysk-hY-Y7Y"/>
+                            <constraint firstItem="QL4-gx-HQq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ayb-iP-IfN"/>
+                            <constraint firstItem="phm-Sl-6hM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="i3f-bm-ySc"/>
+                            <constraint firstItem="QL4-gx-HQq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lLj-9d-zgc"/>
+                            <constraint firstItem="xTl-BA-eUi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="mqT-pJ-9xl"/>
+                            <constraint firstItem="y1y-cc-e4N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="r3c-zb-dBo"/>
+                            <constraint firstItem="xTl-BA-eUi" firstAttribute="top" secondItem="phm-Sl-6hM" secondAttribute="bottom" constant="60" id="u1x-ep-h0q"/>
+                            <constraint firstAttribute="bottom" secondItem="QL4-gx-HQq" secondAttribute="bottom" id="xlW-Z1-Qq2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Deadline" destination="ig9-gD-1hX" id="SgX-6X-xEA"/>
+                        <outlet property="TodoTitle" destination="TrA-oq-h4j" id="ClT-2j-Bx8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-card-LazyCats" width="514" height="814"/>
+        <image name="background-image-LazyCats" width="608" height="1080"/>
+        <image name="cat1-LazyCats" width="429" height="331"/>
+        <image name="comment1-LazyCats" width="357" height="134"/>
+        <image name="logo-LazyCats" width="142" height="103"/>
+        <image name="plus-button-LazyCats" width="57" height="57"/>
+    </resources>
+</document>
