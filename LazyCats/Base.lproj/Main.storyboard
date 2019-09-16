@@ -82,17 +82,6 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="6c0-NH-gXV"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qH-JO-l47">
-                                <rect key="frame" x="338" y="802" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0Qg-7w-UJm"/>
-                                    <constraint firstAttribute="width" constant="46" id="Der-9W-4J0"/>
-                                </constraints>
-                                <state key="normal" title="trigger"/>
-                                <connections>
-                                    <action selector="trigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rha-AN-bIn"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auj-OW-j9n">
                                 <rect key="frame" x="334" y="163" width="50" height="50"/>
                                 <constraints>
@@ -111,9 +100,7 @@
                             <constraint firstItem="phm-Sl-6hM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ar7-qE-qPv"/>
                             <constraint firstAttribute="trailing" secondItem="QL4-gx-HQq" secondAttribute="trailing" id="HGE-QU-gSc"/>
                             <constraint firstItem="y1y-cc-e4N" firstAttribute="top" secondItem="phm-Sl-6hM" secondAttribute="bottom" constant="30" id="KUT-9y-rv2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3qH-JO-l47" secondAttribute="trailing" constant="30" id="Mmt-IJ-rVx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y1y-cc-e4N" secondAttribute="bottom" constant="30" id="MoJ-PK-WMC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3qH-JO-l47" secondAttribute="bottom" constant="30" id="Nu9-8s-QSi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y1y-cc-e4N" secondAttribute="trailing" constant="30" id="VNk-3W-yXN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xTl-BA-eUi" secondAttribute="trailing" constant="60" id="XvI-Uh-smc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xTl-BA-eUi" secondAttribute="bottom" constant="60" id="Ysk-hY-Y7Y"/>
@@ -132,6 +119,7 @@
                     <connections>
                         <outlet property="Deadline" destination="ig9-gD-1hX" id="SgX-6X-xEA"/>
                         <outlet property="TodoTitle" destination="TrA-oq-h4j" id="ClT-2j-Bx8"/>
+                        <outlet property="catComment" destination="DK7-nv-x28" id="Afj-bD-7r3"/>
                         <outlet property="catImage" destination="kw9-JV-7er" id="vuY-bX-IZs"/>
                     </connections>
                 </viewController>

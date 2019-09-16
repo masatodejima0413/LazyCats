@@ -35,6 +35,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var catImage: UIImageView!
     
+    @IBOutlet weak var catComment: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,16 +53,22 @@ class ViewController: UIViewController {
         
         print("IM SWIPED!")
         
+        let randomTodoNumber = Int.random(in: 0...2)
+        let randomImageNumber = Int.random(in: 1...2)
+        let randomCommentNumber = Int.random(in: 1...2)
+        
+        if let title = arrayList[randomTodoNumber]["title"]{
+            TodoTitle.text = String(title)
+        }
+        if let deadline = arrayList[randomTodoNumber]["deadline"]{
+            Deadline.text = String(deadline)
+        }
+        catImage.image = UIImage(named: "cat\(randomImageNumber)-LazyCats")
+        catComment.image = UIImage(named: "comment\(randomCommentNumber)-LazyCats")
+        
+        
     }
     
-    @IBAction func trigger(_ sender: Any) {
-        
-        print("clicked!!")
-//        if let title = arrayList[0]["title"]{
-//
-//            TodoTitle.text = String(title)
-//        }
-    }
     
 }
 
