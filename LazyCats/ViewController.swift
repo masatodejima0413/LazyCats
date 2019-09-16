@@ -33,22 +33,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Deadline: UILabel!
     
-
+    @IBOutlet weak var catImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        catImage.isUserInteractionEnabled = true
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGesture))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        catImage.addGestureRecognizer(swipeRight)
+        
     }
     
+    @objc func swipeGesture(sender: UISwipeGestureRecognizer?){
+        
+        print("IM SWIPED!")
+        
+    }
     
     @IBAction func trigger(_ sender: Any) {
         
-        if let title = arrayList[0]["title"]{
-            
-            TodoTitle.text = String(title)
-            
-        }
+        print("clicked!!")
+//        if let title = arrayList[0]["title"]{
+//
+//            TodoTitle.text = String(title)
+//        }
     }
     
-
 }
 
